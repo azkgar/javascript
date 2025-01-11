@@ -1,0 +1,15 @@
+To write code in Javascript we use two forwards slashes at the beginning
+    //This is a comment
+
+The shortcut for commenting in windows is:
+    Control + /
+In Mac it's:
+    Command + /
+
+We can add a comment in-line such as:
+    console.log("This is a text") //This is an in-line comment
+
+For multi-line comment we use /* */ notation:
+    /* This is a block of text
+    that will be commented out */
+    

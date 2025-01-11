@@ -1,0 +1,17 @@
+String data type:
+    "Everything between quotes is text or string"
+    "Even numbers"
+    In Javascript "3" + "4" equals "34"
+
+Number data type:
+    Numbers without quotes are numbers:
+    3 + 2 = 5
+    There are different types of numbers.
+    We have integers when there's no decimal point:
+        3
+    We have floats when there's a decimal point:
+        3.14159
+    In most coding languages Floats and Integers are different data types
+    In Javascript they are the same, just numbers.
+
+    

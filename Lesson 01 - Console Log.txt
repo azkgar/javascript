@@ -1,0 +1,7 @@
+To print in the console we use:
+    console.log()
+In Javascript the semicolon is not mandatory but it's a good practice to use
+    console.log();
+To print quotes in the log we ca use different methods:
+'Replace the double "quotes" with single quotes'
+"Add a \"backslash\" before the double quotes"
