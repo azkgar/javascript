@@ -14,4 +14,23 @@ Number data type:
     In most coding languages Floats and Integers are different data types
     In Javascript they are the same, just numbers.
 
+Boolean Data Type:
+    It can only be either true or false
+
+
+To check the data type of any piece of data we can use:
+    typeof("3" + "3");
+    // string + string = string
+
+When we have a plus sign in a String and a Number ("3" + 1) we get a string "31"
+When we have a minus sign in a String and a Number ("3" - 1) we get a number 2
+
+To manually convert a data type we can:
+    Convert to Number:
+    Number("42") // 42
+
+    Convert to String:
+    String(123) // "123"
     
+    Convert to Boolean:
+    Boolean(0) //false
