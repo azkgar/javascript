@@ -1,0 +1,20 @@
+A variable is a name container
+
+keyword = let //tells computer we are creating a new variable
+name of variable = result //how the variable will be called
+
+let myAge = 12;
+
+A variable can change its value
+
+if we reuse the variable we don't need to use the keyword let
+
+The naming in Javascript has some rules such as
+
+1.- Names must begin with a letter.
+2.- Names are case sensitive.
+3.- Reserved words cannot be used as names
+4.- Each word in the name should be camelCased
+
+
+(F - 32) * 5/9 = C
