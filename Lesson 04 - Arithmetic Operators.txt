@@ -1,0 +1,28 @@
+There are basic arithmetic operators:
+    Add: 2 + 3
+    Subtract: 5 - 4
+    Multiply: 6 * 2
+    Divide: 12 / 4
+
+Remainder or Modulo % operator
+    Gives the remainder of a division
+    6 / 3 = 2
+    6 % 3 = 0
+
+Exponent
+    a number to the power of another number
+    5 ** 3 
+
+There's an operator execution order for multistep calculation numbers
+Javscript follows the PEMDAS number
+Parentheses
+Exponents
+Multiply or Divide
+Add or Subtract
+
+When we have Multiplication and Division the operations is done from left to right
+
+prompt() function to receive input from the user through the console
+
+p = 1 / wieght * ((415 * circumference) - 9842) - 8.2 -> for men
+p = 1 / wieght * ((415 * circumference) - 7676) - 8.2 -> for women
