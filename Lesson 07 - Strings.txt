@@ -1,0 +1,49 @@
+Apart from using double quotes there are some other ways to represent strings in Javascript:
+    1.- "string"
+    
+    2.- 'string'
+
+    3.- `string`
+
+We can alternate between double and single quotes to accomodate the english grammar.
+"Angela's code is Angela's code" or 'She said: "Hello" to the world'
+
+The double quote is the standard way to declare a string type
+
+"This quote: "To be or not to be" will not work" can be fixed like this:
+    'This quote: "To be or not to be" will not work' or
+    "This quote: \"To be or not to be\" will not work"
+
+The escape character (The backslash)
+
+"This \" will ignore the double quote"
+"This \n will create a new line"
+"This \t will create a taba space"
+"This \\ is how you have a single backslash"
+
+When using backticks we can use multi-line strings
+`
+I
+can
+print
+something
+on
+to
+multiple
+lines
+`
+
+Strings declared with backticks can use template literals
+
+let age = 12;
+console.log(`I am ${age} years old.`);
+
+or execute code:
+
+console.log(`Five times three is ${5 * 3}`);
+
+String concatenation
+Putting strings side by side and turning them into one single string
+"Hello" + "world!" = "Helloworld"
+
+
