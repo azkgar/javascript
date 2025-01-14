@@ -1,0 +1,13 @@
+const myName = "Cesar";
+Constants can't be changed
+
+A constant is used to store something that should not change in value.
+
+All rules on naming variables apply to constant except the camelCase one.
+Constants are written in all CAPS.
+SPEED_OF_LIGHT
+
+With ES6 the var was replaced by let
+var is still being used by programmers because the let handle wasn's supported by all browsers
+
+When Internet Explorer was discontinued and updated to Edge the incompatibility was fixed so from now on always use let
