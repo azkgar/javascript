@@ -1,0 +1,3 @@
+This lesson was about the input box in Auditorium. Not really ES6 related.
+
+In an exercise .length was introduced, this gives us the number of characters in an array.
