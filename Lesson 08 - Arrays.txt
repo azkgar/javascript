@@ -1,0 +1,25 @@
+Arrays hold multiple related pices of data in the same variable
+
+const children = ["Jane", "Ben", "Tom"];
+
+For an array to be valid the data type of the elements has to be the same
+
+The position in the array starts from the first element in the left which would be index 0
+
+const tom = children[2];
+
+The items in the array can be modified even though when declared it's declared as a const
+The constant part is the array but the items inside can be changed.
+
+If you try to change the array to a string or a completely different array it will fail
+
+const grades = ["A", "A", "B"];
+grades = "A"; // error
+grades = ["C", "C", "C"]; // error
+
+grades[2] = "A" // It's ok
+
+If you want to change the array then you need to declare it as let
+
+let grades = ["A", "A", "B"];
+grades = ["C", "C", "C"]; // it's ok
