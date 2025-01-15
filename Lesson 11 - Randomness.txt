@@ -1,0 +1,6 @@
+We have a function to symulate random numbers
+
+Math.random(); -> Generates a random number between 0 and 1, it can be 0 but doesn't go up to 1
+
+
+
