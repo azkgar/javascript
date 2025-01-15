@@ -1,0 +1,16 @@
+In Javascript we can use the comparator operator symbols such as:
+    Greater than >
+    Lesser than <
+    Greater or equal >= // if there's a space between the > and the = the computer will get confused
+    Lesser or equal <=
+
+Javascript has lexicographical comparison to do string comparation against other strings:
+    "Ben" < "Jane" // true
+    "a" < "b" // true
+
+Javascript uses the unicode to compare characters
+
+We can also compare to see if two things are equal:
+    Equality ==
+    Not Equal !=
+
