@@ -14,3 +14,10 @@ We can also compare to see if two things are equal:
     Equality ==
     Not Equal !=
 
+Same vs. Identical
+Javascript handles different data types comparation such as:
+    800 == "800" // Javascript automatically converts data types so this is True
+
+    800 === "800" // We force Javascript to keep the data types using === so this is false
+
+

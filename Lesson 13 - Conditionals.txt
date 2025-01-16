@@ -1,0 +1,21 @@
+if (this is true) {then do that}
+else {do this}
+
+The correct syntax of an if else statement is as follows:
+
+if (age >= 16) {
+    console.log("You can drive.");
+} else {
+    console.log("You're not old enough to drive.");
+}
+
+You can have multiple if statements one after the other.
+You need to be careful on the order of the if statements, if the conditions are met all if statements could be triggered.
+
+The alternative to multiple related conditions would be the else if:
+
+if {}
+else if {}
+else if {}
+
+the else if will go in order from top to bottom and it will stop checking once once of the previous is triggered.
