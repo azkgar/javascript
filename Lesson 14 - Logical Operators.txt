@@ -1,0 +1,11 @@
+Logic Gates
+
+AND Gate = 1 and 1 becomes 1
+OR Gate = 1 and 1 or 1 and 0 or 1 and 0 becomes 1
+NOT Gate = 1 becomes 0, 0 becomes 1
+
+AND operator && -> All conditions must be true
+OR operator || -> Any condition can be true
+NOT operator ! -> Reverses the condition boolean
+
+
