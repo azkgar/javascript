@@ -1,0 +1,32 @@
+When we have multiple ifs checking related information we could end up with a massive code with if and else if.
+
+To avoid this we can use the switch statement
+
+switch (variable) {
+    case value 1:
+    // Do something;
+    break;
+
+    case value 2:
+    // Do something
+    break;
+
+    default:
+}
+
+if we don't add the break statement it will create a fall through where all the actions below our case will be executed.
+
+we can't use logical operators in the switch cases
+
+So to avoid duplicating the same output for multiple cases we can stack them:
+
+switch(variable) {
+    case value 1:
+    case value 2:
+    case value 3:
+        // Do something;
+        break;
+    default:
+}
+
+In cases not only does it has to match in value, it also has to match in data type.
