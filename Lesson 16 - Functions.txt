@@ -1,0 +1,78 @@
+We can use functions to minimize the repetition of code and avoid writing the same lines multiple times.
+
+function name() {
+    //Code that will be triggered when calling the function
+    return variable;
+}
+
+name(); //Using the function
+
+There are some dynamic functions that change how they execute.
+
+function name(param1, param2) {
+    //Code that uses parameters
+    return param1;
+}
+
+name(2, 3); // Using the function
+
+When we use a function we say we are Calling a function
+When we create a function we say we are Declaring a function
+
+In Javascript you can Declare the function after it's called thanks to the hoisting 
+
+When declaring or define a function we call the variables between the paretheses parameters.
+When we call the function and populate data for the parameters they are called arguments.
+
+We can use the return keyword to return items or to exit a function.
+
+
+if(name === "") {
+    return;
+}
+
+isLeap(1998);
+
+function isLeap(year) {
+  if ((year % 4 == 0 && year % 100 != 0) || (year % 4 == 0 && year % 100 == 0 && year % 400 == 0)) {
+    console.log("Leap");
+  } else {
+    console.log("Not Leap");
+  }
+}
+
+year = Number(inputs[0]);
+
+// function findLeapYear(year){
+//   if (year % 4 === 0){
+//     if (year % 100 === 0) {
+//       if (year % 400 === 0) {
+//         console.log("Leap");
+//       } else {
+//         console.log("Not Leap");
+//       }
+//     } else {
+//       console.log("Leap");
+//     }
+//   } else {
+//     console.log("Not Leap");
+//   };
+// };
+
+function findLeapYear(year) {
+  if((year % 4 === 0) && (year % 100 != 0 || year % 400 === 0)){
+    console.log("Leap");
+  } else {
+    console.log("Not Leap");
+  };
+};
+
+findLeapYear(year);
+
+function isLeap(year) {
+  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+    console.log("Leap");
+  } else {
+    console.log("Not Leap");
+  }
+}
