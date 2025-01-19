@@ -15,5 +15,3 @@ do {
 } while (/* Some condition is true */)
 
 We can use a break inside a while loop to exit the loop early.
-
-
