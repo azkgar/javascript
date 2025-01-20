@@ -1,0 +1,11 @@
+When we create a variable or a function they can be global or local
+If the variable is created outside of a function it's global and it can be accesed everywhere.
+If the variable is created inside of the function it's local and it can only be accessed in the function it was declared.
+
+We can have a global and a local variable with the same name.
+
+Local variables inside a block have a higher priority and will override any global variable with the same name.
+
+In Javascript we have hoisting: using the function before it's declared.
+
+
