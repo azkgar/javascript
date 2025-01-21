@@ -1,0 +1,130 @@
+Capstone Project
+
+In Javascript we can have an array of arrays.
+They could be called 2D arrays.
+
+2DArray = [[1, 2, 3], [4, 5, 6]]
+
+To get the first array we can use 2DArray[0].
+And to get the first element of the first array we can use 2DArray[0][0]
+
+I like my solution for Task 8 better:
+
+function markPresentLetters(guessedWord){
+  for(let i = 0; i < WORD_LENGTH; i++){
+    let isMatching = false;
+    for(const letter of selectedWord){
+      if(letter === guessedWord[i]){
+        isMatching = true;
+      }
+    }
+    if (isMatching) {
+      turnYellow(tileArray[0][i]);
+    } else {
+      turnGray(tileArray[0][i]);
+    }
+  };
+};
+
+-------------------------------------------------------------------
+FINAL code
+-------------------------------------------------------------------
+
+const WORD_LENGTH = 4;
+const MAX_GUESSES = 4;
+let currentRow = 0;
+let currentTile = 0;
+
+let selectedWord = WORDS[Math.floor(Math.random() * WORDS.length)];
+
+function letterTyped(letter) {
+  if (currentTile < WORD_LENGTH) {
+    let tile = tileArray[currentRow][currentTile];
+    tile.innerHTML = letter;
+    currentTile++;
+  }
+}
+
+function deletePressed() {
+  if (currentTile > 0) {
+    currentTile--;
+    const tile = tileArray[currentRow][currentTile];
+    tile.innerHTML = "";
+  }
+}
+
+function enterPressed() {
+  if (currentTile !== WORD_LENGTH) {
+    alert("Not enough letters!");
+    return;
+  }
+
+  let userGuess = getUserGuess();
+
+  let isInWordList = false;
+  for (word of WORDS) {
+    if (userGuess === word) {
+      isInWordList = true;
+      break;
+    }
+  }
+  if (!isInWordList) {
+    alert("That's not a word!");
+    return;
+  }
+
+  let firstPass = markCorrectLetters(userGuess);
+  markPresentLetters(firstPass);
+
+//Task 10: If the user get's the word right then show them an alert() and end the game.
+  //If the user uses up all 4 attempts, then show them an alert() and end the game.
+
+  if (userGuess === selectedWord) {
+    alert("You Got it!");
+    return;
+  }
+
+  if (currentRow === MAX_GUESSES -1) {
+    alert(`Game Over! The word was ${selectedWord}.`);
+    return;
+  };
+
+  currentRow++;
+  currentTile = 0;
+}
+
+function getUserGuess() {
+  let guess = "";
+  for (tile of tileArray[currentRow]) {
+    guess += tile.innerHTML;
+  }
+  return guess;
+}
+
+function markCorrectLetters(guessedWord) {
+  let markedGuess = [];
+  for (let i = 0; i < WORD_LENGTH; i++) {
+    if (guessedWord[i] === selectedWord[i]) {
+      let correctTile = tileArray[currentRow][i];
+      markedGuess[i] = "#";
+      turnGreen(correctTile);
+    } else {
+      markedGuess[i] = guessedWord[i];
+    }
+  }
+  return markedGuess;
+}
+
+function markPresentLetters(guess) {
+  for (let i = 0; i < WORD_LENGTH; i++) {
+    const letterToCheck = selectedWord[i];
+    for (let j = 0; j < WORD_LENGTH; j++) {
+      if (guess[j] === letterToCheck) {
+        guess[j] = "*";
+        turnYellow(tileArray[currentRow][j]);
+      } else if (guess[j] !== "#" && guess[j] !== "*") {
+        turnGray(tileArray[currentRow][j]);
+      }
+    }
+  }
+}
