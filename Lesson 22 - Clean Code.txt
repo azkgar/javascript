@@ -1,0 +1,9 @@
+Best coding practices in Javascript
+
+Zen of coding - Zen of Python - 19 principles of good python code
+
+1. Indentation: Code is indented because brackets are across multiple lines and the easiest way to visualize which code is inside which block is using indentation.
+2. Whitespace: There should be a single space at the side of operator such as modulus, and, triple equals, equals, plus, minus, etc.
+3. Create good names: Use naming convention, avoid abbreviations that no one will understand and meaningless names. Use verbs for functions and nouns for variables.
+4. Flat is better than nested: Nesting creates more dimensions of logic and are hard to follow.
+5. Explain Yourself: Document your code as you go, write comments to explain it.
