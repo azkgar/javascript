@@ -1,0 +1,54 @@
+There are other ways to create functions
+
+function bmi(height, weight) {
+    return weight / height ** 2;
+}
+
+We could use function expression to do the same
+
+let bmi = function(height, weight) {
+    weight / height ** 2;
+}
+
+function expressions are not hoisted in Javascript
+When you have one function expression you can only use it after it was declared
+
+function expressions allow us to create callbacks
+With callbacks we can use a function as a parameter of a function
+
+function greet (name, callback) {
+    console.log("Hello" + name);
+    callback();
+}
+
+greet("John", function() {
+    console.log("function has finished!");
+})
+
+Arrow functions replace this:
+
+function calculator (n1, n2, calculationFunction) {
+    return calculationFunction(n1, n2)
+}
+
+calculator(3, 4, function(n1, n2){
+    return n1 + n2;
+})
+
+with this:
+
+calculator(3, 4, (n1, n2) => n1 + n2);
+
+Arrow functions can be multiline as well:
+
+let power = (number, exponent) => {
+    let counter = 0;
+    let accumulator = number;
+    while (counter < exponent) {
+        accumulator *= number;
+        counter++;
+    }
+    return accumulator;
+}
+
+When an arrow function is a single line we can ignore the curly braces and the return keyword.
