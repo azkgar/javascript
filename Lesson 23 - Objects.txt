@@ -1,0 +1,58 @@
+We now know that we can group different elements using arrays, but what if the data is more complex?
+
+We can create an Object like this:
+
+let myCar = {
+    color: "Red",
+    mileage: 35000,
+    seats: 5,
+    owners: ["Tony", "Angela"]
+}
+
+console.log(myCar.color); //Red
+
+in this example, color, mileage, seats and owners are Properties of the Object
+
+The way we access any property value is using the dot notation
+
+myCar.mileage; // Dot notation
+
+or using the bracket notation
+
+myCar["mileage"]; //Bracket notation
+
+We can change the property values of an object:
+
+myCar.mileage = 3500;
+
+We can use the for in loop to get all the properties of an object:
+
+for (propertyName in fruits) {
+    console.log(propertyName);
+}
+
+To add more properties to the Object we can use the notation:
+object.newProperty = value;
+object["newProperty"] = value;
+
+To delete a property we do the following:
+delete object.property; -> This returns either true or false depending on the deletion (succcesful or failure)
+delete object["property"];
+
+We can have objects within other objects.
+
+One of the most common formats to transfer information is the JSON (JS Object Notation)
+
+let order1 = {
+    number: 8463723,
+    items: [
+        {
+            name: "Screws",
+            quantity: 50,
+        },
+        {
+            name: "Helmets",
+            quantity: 2,
+        }
+    ],
+}
