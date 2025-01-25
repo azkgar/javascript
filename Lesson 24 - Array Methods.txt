@@ -1,0 +1,73 @@
+Arrays are objects
+
+let normalArray = ["X", "Y", "Z"];
+
+let object = {
+    0: "A",
+    1: "B",
+    2: "C",
+}
+
+Arrays have Mutability
+
+const anObject = {
+    color: "Red",
+}
+
+anObject.color = "Green";
+
+const anArray = ["A", "B", "C"];
+anArray[0] = "Z";
+
+What we can't do is change the array for a new array:
+const fruits = ["apple", "lemon", "grapes"];
+fruits = ["bananas", "coconuts"]; // error
+
+Arrays have the spread operator ...
+
+let fruits = ["apples", "bananas", "cherries"];
+let spread = [...fruits, "dates"] // ["apples", "bananas", "cherries", "dates"]
+
+You can add items to an array using the push method:
+fruits.push("Cherry");
+
+And you can also use concatenation:
+fruits.concat("Cactus");
+
+When using push we modify the original array.
+When using concatenation we are not modifying the original array, we are creating a new array.
+
+We can remove the last item from an array using push:
+fruits.pop();
+
+We can also split the array in slices with Splice:
+
+aray.splice(position, numberOfItemsToRemove, addItem1, ..., addItemX);
+
+let alphabet = [A, B, D, C, E];
+alphabet.splice(2, 2, C, D); // [A, B, C, D, E]
+
+We can also get a segment of an array using Slice:
+newArray=array.slice(startPosition, endPosition);
+
+There are other two mutating array methos called Shift and Unshift.
+
+Shift will shift all the numbers to the left by one step //Deletes the first item of the array.
+As an output shift will give you the value of the item that was removed.
+
+numbers.shift();
+
+Unshift will shift all the numbers to the right. //Adds items to the beginning of the array.
+As an output it will give the new array length
+
+numbers.unshift(1,2); // data to include in the array between the parentheses
+
+function reverseFib(n) {
+  let finalSequence = [1,0];
+  for (let i=2; i<n; i++) {
+    finalSequence.unshift(finalSequence[0] + finalSequence[1]);
+  }
+  return finalSequence;
+}
+
+console.log(reverseFib(inputs[0]));

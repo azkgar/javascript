@@ -56,3 +56,18 @@ let order1 = {
         }
     ],
 }
+
+JSON can be flat packed:
+{number: 8463723, items: [{name: "Screws",quantity: 50,},{name: "Helmets",quantity: 2,}],}
+
+To convert from JSON to JavaScript Object and viceversa we can do the following:
+
+let jokeAsJSON = JSON.stringify(joke);
+let jokeAsJSObject = JSON.parse(jokeAsJSON);
+
+A Method is a function asossiated to an Object
+
+let person = {
+    name: "Angela",
+    greetPeople: () => console.log("Hello everyone!")
+}
