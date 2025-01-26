@@ -1,0 +1,29 @@
+Similar to Arrays, Strings can also be slices using
+string.slice(startPosition, endPosition);
+
+There are other two methods:
+substring(startPosition, endPosition);
+
+substr(startPosition, length);
+
+But it's recommended to use slice.
+
+All string methods are non-mutating, meaning they won't change the original string
+
+We can get a particular character in a String using:
+string.chartAt(position) or string[position]
+
+We can chanse the case of the string:
+string.toUpperCase();
+string.toLowerCase();
+
+We can remove the extra blank spaces at the beginning and end of a string with the method trim:
+string.trim();
+
+To convert a string to an array we can use the method split.
+let names = "Angela, Ben, Tom, Jenny, Helena";
+let namesArray = names. split(", "); ["Angela", "Ben", "Tom", "Jenny", "Helena"]
+
+We can also convert an array to a string using the method join.
+let fruits = ["Apple", "BAnana", "Cherry"];
+let fruitKebab = fruits.join("-"); // "Apple-Banana-Cherry";
