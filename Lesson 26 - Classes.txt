@@ -1,0 +1,73 @@
+Classes are a form of Blueprint and allows us to create lots of Objects
+
+We can create a JS class like this:
+
+class ClassName {
+    constructor(parameter1, parameter 2) {
+        this.property1 = parameter1;
+        this.property2 = parameter2;
+    }
+}
+
+Name of the classes doesn't use camelCase it uses PascalCase
+
+let objectFromClass = new ClassName(argument1, argument2);
+
+Classes can also have methods:
+
+class Animal {
+    constructor(numberOfLegs) {
+        this.numberOfLegs = numberOfLegs;
+    }
+
+    breathe(){
+        console.log("Inhale, exhale.");
+    }
+}
+
+We can use the keyword this to make the methods more adaptable:
+
+class Animal {
+    constructor(numberOfLegs) {
+        this.numberOfLegs = numberOfLegs;
+    }
+
+    canStand(){
+        if (this.numberOfLegs === 2) {return true;}
+        else {return false;};
+    }
+}
+
+We can have "global" elements that are not defined by the user and set in the constructor, they don't need to be defined as let or const:
+
+class Todo {
+    isComplete = false;
+    constructor (text) {
+        this.text = text;
+    }
+
+    toggleComplete() {
+        this.isComplete = !this.isComplete;
+    }
+}
+
+Classes have Private Proterties to avoid proteties to be set by unauthorized actions or to have the function altered. We just need to add the # sign at the beggining of the name.
+
+class Todo {
+    #isComplete = false;
+    constructor (text) {
+        this.text = text;
+    }
+
+    toggleComplete() {
+        this.isComplete = !this.isComplete;
+    }
+}
+
+To get or set the value of a private property we need the function setter or getter:
+
+get isComplete() {return this.#isComplete;} -> todo.isComplete we don't need to call the get function
+
+set isComplete(newValue) {this.#isComplete = newValue;} -> todo.isComplete = true; we don't need to call the set function.
+
+
