@@ -1,0 +1,26 @@
+Dates also include time
+
+let now - new Date();
+now.getMinutes(); // get minutes
+now.getSeconds(); // get seconds
+now.getMilliseconds(); // get milliseconds
+now.getTime(); // milliseconds since January 1, 1970
+
+We can use time to delay a function:
+setTimeout (functionName, delayInMs);
+
+We can trigger a function repeately with delay:
+setInterval(function, intervalInMs);
+
+to stop the timer we have the function:
+const intervalId = setInterval(() => {
+    console.log("This will not do anything.");
+}, 1000);
+
+clearInterval(intervalId);
+
+const timerId = setTimeout(() => {
+    console.log("Hello from the other side. ");
+}, 5000);
+
+clearTimeout(timerId);
