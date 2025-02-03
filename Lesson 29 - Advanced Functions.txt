@@ -1,0 +1,29 @@
+Functions can have default parameter values:
+
+function example(param = "default value") {
+    console.log(param);
+}
+
+All parameters in a function are optional as long as they are not used in some operations.
+
+Functions also have the Rest Operator:
+function example(firstParam, ...args) {
+    console.log(args);
+}
+
+example(1, 2, 3)// The first item is matched to the firstParam and the rest is converted to an array
+
+Javascript has functions that call themselves called Recursive Functions:
+
+function countDow(n) {
+    console.log(n);
+    if (n === 0) return;
+    countDown(n-1);
+}
+
+console.log(reverseString("hello"));
+
+function reverseString(string) {
+  if (string.length <= 1) return string;
+  return reverseString(string.slice(1)) + string[0];
+}
